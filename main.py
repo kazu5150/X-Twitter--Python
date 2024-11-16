@@ -20,7 +20,7 @@ client = tweepy.Client(
     access_token_secret=ACCESS_TOKEN_SECRET
 )
 
-# ツイートの代わりにユーザー情報を取得
+# ユーザー情報を取得
 try:
     me = client.get_me()
     print(f"Connected as: {me.data.username}")
